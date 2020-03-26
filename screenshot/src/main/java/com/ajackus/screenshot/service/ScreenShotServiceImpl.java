@@ -35,7 +35,7 @@ public class ScreenShotServiceImpl implements ScreenShotService {
 
 				Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
 
-				ImageIO.write(screenshot.getImage(), "jpg", new File("F://dibyam//ElementScreenshot.jpg"));
+				ImageIO.write(screenshot.getImage(), "jpg", new File("F://dibyam//Screenshot.jpg"));
 				driver.manage().window().setPosition(new Point(-2000, 0));
 				response = "Screenshot successfully created";
 			} catch(IOException e) {
